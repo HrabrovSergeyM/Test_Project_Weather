@@ -43,6 +43,7 @@ extension FavoritesViewController: FavoritesViewDelegate {
     func didSelectCity(_ city: City) {
         let weatherVC = WeatherViewController()
         weatherVC.selectedLocation = city.location
+        weatherVC.title = city.name
         navigationController?.pushViewController(weatherVC, animated: true)
     }
 }
