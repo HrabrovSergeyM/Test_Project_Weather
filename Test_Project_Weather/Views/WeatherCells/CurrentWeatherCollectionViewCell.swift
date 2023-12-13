@@ -6,9 +6,16 @@
 //
 
 import UIKit
+import WeatherKit
 
 class CurrentWeatherCollectionViewCell: UICollectionViewCell {
     static let cellIdentifier = "CurrentWeatherCollectionViewCell"
+    
+    private var cellBackgroundColor: UIColor = .clear {
+        didSet {
+            contentView.backgroundColor = cellBackgroundColor
+        }
+    }
     
     private let tempLabel: UILabel = {
         let label = UILabel()
@@ -35,7 +42,19 @@ class CurrentWeatherCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        contentView.backgroundColor = .green
+        
+        contentView.backgroundColor = backgroundColor
+        contentView.layer.cornerRadius = 12
+        contentView.layer.borderWidth = 1
+        contentView.layer.borderColor = UIColor.clear.cgColor
+        contentView.layer.masksToBounds = true
+        
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 2)
+        layer.shadowRadius = 4.0
+        layer.shadowOpacity = 0.3
+        layer.masksToBounds = false
+        
         contentView.addSubviews(tempLabel, conditionLabel, icon)
         
         addConstraints()
@@ -72,8 +91,9 @@ class CurrentWeatherCollectionViewCell: UICollectionViewCell {
     }
     
     public func configure(with vm: CurrentWeatherCollectionViewCellViewModel) {
+        cellBackgroundColor = UIColor.color(forWeatherType: vm.condition)
         icon.image = UIImage(systemName: vm.iconName)
-        conditionLabel.text = vm.condition
+        conditionLabel.text = vm.condition.description
         tempLabel.text = vm.temperature
     }
 }

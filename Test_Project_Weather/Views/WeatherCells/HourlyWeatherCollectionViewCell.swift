@@ -35,10 +35,19 @@ class HourlyWeatherCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.layer.cornerRadius = 8
-        contentView.layer.borderWidth = 1
-        contentView.layer.borderColor = UIColor.secondaryLabel.cgColor
-        contentView.backgroundColor = .secondarySystemBackground
+        
+        contentView.backgroundColor = UIColor.systemGray5
+               contentView.layer.cornerRadius = 8
+               contentView.layer.borderWidth = 1
+               contentView.layer.borderColor = UIColor.clear.cgColor
+               contentView.layer.masksToBounds = true
+               
+               layer.shadowColor = UIColor.black.cgColor
+               layer.shadowOffset = CGSize(width: 0, height: 2)
+               layer.shadowRadius = 4.0
+               layer.shadowOpacity = 0.3
+               layer.masksToBounds = false
+        
         contentView.addSubviews(timeLabel, icon, tempLabel)
         
         addConstraints()

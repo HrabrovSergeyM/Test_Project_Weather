@@ -15,8 +15,8 @@ struct CurrentWeatherCollectionViewCellViewModel {
         self.model = model
     }
     
-    public var condition: String {
-        return model.condition.description
+    public var condition: WeatherCondition {
+        return model.condition
     }
     
     public var temperature: String {
