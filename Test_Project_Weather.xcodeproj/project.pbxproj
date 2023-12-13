@@ -29,6 +29,7 @@
 		E9A3B8A42B2A06AA00EA26EA /* CurrentWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8A32B2A06AA00EA26EA /* CurrentWeatherCollectionViewCellViewModel.swift */; };
 		E9A3B8A62B2A082C00EA26EA /* HourlyWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8A52B2A082C00EA26EA /* HourlyWeatherCollectionViewCellViewModel.swift */; };
 		E9A3B8A82B2A084100EA26EA /* DailyWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8A72B2A084100EA26EA /* DailyWeatherCollectionViewCellViewModel.swift */; };
+		E9A3B8AA2B2A23AA00EA26EA /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8A92B2A23AA00EA26EA /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		E9A3B8A32B2A06AA00EA26EA /* CurrentWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		E9A3B8A52B2A082C00EA26EA /* HourlyWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		E9A3B8A72B2A084100EA26EA /* DailyWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		E9A3B8A92B2A23AA00EA26EA /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		E9A3B87E2B274A3300EA26EA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E9A3B8A92B2A23AA00EA26EA /* City.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				E9A3B8952B27795F00EA26EA /* SearchView.swift in Sources */,
 				E9A3B89E2B29F32400EA26EA /* DailyWeatherCollectionViewCell.swift in Sources */,
 				E9A3B89C2B29F2C000EA26EA /* CurrentWeatherCollectionViewCell.swift in Sources */,
+				E9A3B8AA2B2A23AA00EA26EA /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

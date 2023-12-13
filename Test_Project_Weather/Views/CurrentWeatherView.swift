@@ -16,7 +16,7 @@ final class CurrentWeatherView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
-        //        backgroundColor = .red
+        
         createCollectionView()
     }
     
@@ -149,8 +149,6 @@ extension CurrentWeatherView: UICollectionViewDataSource {
             }
             cell.configure(with: vms[indexPath.row])
             return cell
-            
         }
     }
-    
 }
