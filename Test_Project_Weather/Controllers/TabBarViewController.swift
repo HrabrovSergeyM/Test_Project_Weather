@@ -16,15 +16,13 @@ final class TabBarViewController: UITabBarController {
 
     private func setupTabs() {
         let favoritesVC = FavoritesViewController()
-        let searchVC = SearchViewController()
         let weatherVC = WeatherViewController()
         
-        for vc in [weatherVC, favoritesVC, searchVC] {
+        for vc in [weatherVC, favoritesVC] {
             vc.navigationItem.largeTitleDisplayMode = .automatic
         }
         
         let navFavorites = UINavigationController(rootViewController: favoritesVC)
-        let navSearch = UINavigationController(rootViewController: searchVC)
         let navWeather = UINavigationController(rootViewController: weatherVC)
         
         navWeather.tabBarItem = UITabBarItem(title: "Weather",
@@ -33,15 +31,12 @@ final class TabBarViewController: UITabBarController {
         navFavorites.tabBarItem = UITabBarItem(title: "Favorites",
                                                image: UIImage(systemName: "star"),
                                                tag: 2)
-        navSearch.tabBarItem = UITabBarItem(title: "Search",
-                                               image: UIImage(systemName: "magnifyingglass"),
-                                               tag: 3)
         
-        for nav in [navWeather, navFavorites, navSearch] {
+        for nav in [navWeather, navFavorites] {
             nav.navigationBar.prefersLargeTitles = true
         }
         
-        setViewControllers([navWeather, navFavorites, navSearch], animated: true)
+        setViewControllers([navWeather, navFavorites], animated: true)
     }
     
 }

@@ -13,13 +13,11 @@
 		E9A3B8742B27461C00EA26EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A3B8732B27461C00EA26EA /* Assets.xcassets */; };
 		E9A3B8772B27461C00EA26EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A3B8752B27461C00EA26EA /* LaunchScreen.storyboard */; };
 		E9A3B8862B27571100EA26EA /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8852B27571100EA26EA /* FavoritesViewController.swift */; };
-		E9A3B8882B27572900EA26EA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8872B27572900EA26EA /* SearchViewController.swift */; };
 		E9A3B88A2B27579500EA26EA /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8892B27579500EA26EA /* WeatherViewController.swift */; };
 		E9A3B88C2B2757EB00EA26EA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B88B2B2757EB00EA26EA /* Extensions.swift */; };
 		E9A3B88F2B27715100EA26EA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B88E2B27715100EA26EA /* LocationManager.swift */; };
 		E9A3B8912B2771D200EA26EA /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8902B2771D200EA26EA /* WeatherManager.swift */; };
 		E9A3B8932B27792200EA26EA /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8922B27792200EA26EA /* CurrentWeatherView.swift */; };
-		E9A3B8952B27795F00EA26EA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8942B27795F00EA26EA /* SearchView.swift */; };
 		E9A3B8972B27796F00EA26EA /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8962B27796F00EA26EA /* FavoritesView.swift */; };
 		E9A3B8992B29224800EA26EA /* CurrentWeatherSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B8982B29224800EA26EA /* CurrentWeatherSection.swift */; };
 		E9A3B89C2B29F2C000EA26EA /* CurrentWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3B89B2B29F2C000EA26EA /* CurrentWeatherCollectionViewCell.swift */; };
@@ -41,14 +39,12 @@
 		E9A3B8762B27461C00EA26EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9A3B8782B27461C00EA26EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9A3B8852B27571100EA26EA /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		E9A3B8872B27572900EA26EA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E9A3B8892B27579500EA26EA /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		E9A3B88B2B2757EB00EA26EA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E9A3B88D2B27710A00EA26EA /* Test_Project_Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Test_Project_Weather.entitlements; sourceTree = "<group>"; };
 		E9A3B88E2B27715100EA26EA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		E9A3B8902B2771D200EA26EA /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		E9A3B8922B27792200EA26EA /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
-		E9A3B8942B27795F00EA26EA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E9A3B8962B27796F00EA26EA /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		E9A3B8982B29224800EA26EA /* CurrentWeatherSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherSection.swift; sourceTree = "<group>"; };
 		E9A3B89B2B29F2C000EA26EA /* CurrentWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -146,7 +142,6 @@
 				E9A3B89A2B29285000EA26EA /* WeatherCells */,
 				E9A3B8922B27792200EA26EA /* CurrentWeatherView.swift */,
 				E9A3B8962B27796F00EA26EA /* FavoritesView.swift */,
-				E9A3B8942B27795F00EA26EA /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,7 +164,6 @@
 				E9A3B86E2B27461900EA26EA /* TabBarViewController.swift */,
 				E9A3B8892B27579500EA26EA /* WeatherViewController.swift */,
 				E9A3B8852B27571100EA26EA /* FavoritesViewController.swift */,
-				E9A3B8872B27572900EA26EA /* SearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -255,7 +249,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A3B8A62B2A082C00EA26EA /* HourlyWeatherCollectionViewCellViewModel.swift in Sources */,
-				E9A3B8882B27572900EA26EA /* SearchViewController.swift in Sources */,
 				E9A3B8A82B2A084100EA26EA /* DailyWeatherCollectionViewCellViewModel.swift in Sources */,
 				E9A3B88A2B27579500EA26EA /* WeatherViewController.swift in Sources */,
 				E9A3B8992B29224800EA26EA /* CurrentWeatherSection.swift in Sources */,
@@ -271,7 +264,6 @@
 				E9A3B8A42B2A06AA00EA26EA /* CurrentWeatherCollectionViewCellViewModel.swift in Sources */,
 				E9A3B86D2B27461900EA26EA /* SceneDelegate.swift in Sources */,
 				E9A3B88C2B2757EB00EA26EA /* Extensions.swift in Sources */,
-				E9A3B8952B27795F00EA26EA /* SearchView.swift in Sources */,
 				E9A3B89E2B29F32400EA26EA /* DailyWeatherCollectionViewCell.swift in Sources */,
 				E9A3B89C2B29F2C000EA26EA /* CurrentWeatherCollectionViewCell.swift in Sources */,
 				E9A3B8AA2B2A23AA00EA26EA /* City.swift in Sources */,
